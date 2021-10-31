@@ -47,6 +47,7 @@ main {
         position: fixed;
         left: 0;
         top: 0;
+        z-index: 30;
 
         .bread-topup {
             display: flex;
@@ -148,7 +149,7 @@ main {
         @include transition();
 
         &.active {
-            height: 75vh;
+            height: 60vh;
             visibility: visible;
         }
 

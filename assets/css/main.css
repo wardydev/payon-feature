@@ -18,6 +18,7 @@ main .breadcrumbs {
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 30;
 }
 main .breadcrumbs .bread-topup {
   display: flex;
@@ -104,7 +105,7 @@ main .modal-detail {
   transition: 0.5s;
 }
 main .modal-detail.active {
-  height: 75vh;
+  height: 60vh;
   visibility: visible;
 }
 main .modal-detail .modal-header {
