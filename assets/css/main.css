@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: #1B1B1B;
+}
+
+main .breadcrumbs {
+  background-color: #DE1D4C;
+  height: 100px;
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+main .breadcrumbs .bread-topup {
+  display: flex;
+  align-items: center;
+  color: #f8f9fa;
+}
+main .breadcrumbs .bread-topup svg {
+  width: 28px;
+}
+main .breadcrumbs .bread-topup span {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+main .data-game {
+  margin-top: 6rem;
+  padding: 2rem 1rem;
+}
+main .data-game .game-nominal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-radius: 8px;
+  border-bottom: 2px solid rgba(27, 27, 27, 0.2);
+}
+main .data-game .game-nominal span {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+main .data-game .game-nominal .nominal-icon {
+  display: flex;
+}
+main .data-game .game-nominal .nominal-icon svg {
+  width: 28px;
+}
+main .data-game .game-nominal .nominal-icon .nominal-filter {
+  margin-left: 1rem;
+}
+main .data-game .game-games {
+  margin-top: 1rem;
+}
+main .data-game .game-games .game-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  border-radius: 8px;
+  border-bottom: 2px solid rgba(27, 27, 27, 0.2);
+}
+main .data-game .game-games .game-card .game-title h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+main .data-game .game-games .game-card .game-title p {
+  font-size: 1.25rem;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+main .data-game .game-games .game-card .game-title b {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+main .data-game .game-games .game-card .game-btn {
+  padding: 0.5rem 2rem;
+  border: 2px solid #DE1D4C;
+  color: #DE1D4C;
+  font-weight: 500;
+}
+main .modal-detail {
+  height: 0vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+  background-color: #f8f9fa;
+  border-radius: 1.5rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  color: #f8f9fa;
+  visibility: hidden;
+  transition: 0.5s;
+}
+main .modal-detail.active {
+  height: 75vh;
+  visibility: visible;
+}
+main .modal-detail .modal-header {
+  height: 70px;
+  background-color: #DE1D4C;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+main .modal-detail .modal-header .header-detail {
+  display: flex;
+  align-items: center;
+}
+main .modal-detail .modal-header .header-detail svg {
+  width: 28px;
+  margin-right: 1rem;
+}
+main .modal-detail .modal-header svg {
+  width: 28px;
+}
+main .modal-detail .modal-body {
+  padding: 2rem 1rem;
+}
+main .modal-detail .modal-body .modal-content {
+  color: #1B1B1B;
+}
+main .modal-detail .modal-body .modal-content span {
+  opacity: 0.6;
+}
+main .modal-detail .modal-body .modal-content h4 {
+  font-size: 1.25rem;
+}
+main .modal-detail .modal-body .modal-content .data-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  border-bottom: 2px solid rgba(27, 27, 27, 0.2);
+}
+main .modal-detail .modal-body .modal-content .data-content .data-saldo {
+  color: #DE1D4C;
+}
+main .modal-detail .modal-body .modal-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  color: #1B1B1B;
+  margin-top: 1.5rem;
+}
+main .modal-detail .modal-body .modal-action span {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+main .modal-detail .modal-body .modal-action .modal-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #DE1D4C;
+  color: #f8f9fa;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=main.css.map */

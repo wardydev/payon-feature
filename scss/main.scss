@@ -1,0 +1,216 @@
+$primary-color: #DE1D4C;
+$dark-color: #1B1B1B;
+$light-color: #f8f9fa;
+
+@mixin padding-x {
+    padding: 2rem 1rem;
+}
+@mixin svg-width {
+    width: 28px;
+}
+@mixin content-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+@mixin border-bottom($padding) {
+    padding-bottom: $padding;
+    border-radius: 8px;
+    border-bottom: 2px solid rgba($dark-color, $alpha: 0.2);
+}
+
+@mixin transition {
+    transition: 0.5s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: $dark-color;
+}
+
+// container
+main {
+    .breadcrumbs {
+        background-color: $primary-color;
+        height: 100px;
+        width: 100%;
+        padding: 1rem;
+        position: fixed;
+        left: 0;
+        top: 0;
+
+        .bread-topup {
+            display: flex;
+            align-items: center;
+            color: $light-color;
+
+            svg {
+                @include svg-width();
+            }
+
+            span {
+                margin-left: 1rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .data-game {
+        margin-top: 6rem;
+        @include padding-x();
+        
+        .game-nominal {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 1.5rem;
+            border-radius: 8px;
+            border-bottom: 2px solid rgba($dark-color, $alpha: 0.2);
+
+            span {
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
+
+            .nominal-icon {
+                display: flex;
+
+                svg {
+                    @include svg-width()
+                }
+
+                .nominal-filter {
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .game-games {
+            margin-top: 1rem;
+
+            .game-card {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 1.5rem;
+                padding-top: 1.5rem;
+                border-radius: 8px;
+                border-bottom: 2px solid rgba($dark-color, $alpha: 0.2);
+
+                .game-title {
+                    h4 {
+                        font-size: 1.25rem;
+                        font-weight: 700;
+                        margin-bottom: 3px;
+                    }
+                    p {
+                        font-size: 1.25rem;
+                        opacity: 0.6;
+                        margin-bottom: 10px;
+                    }
+                    b {
+                        font-size: 1.25rem;
+                        font-weight: 700;
+                    }
+                }
+                .game-btn {
+                    padding: 0.5rem 2rem;
+                    border: 2px solid $primary-color;
+                    color: $primary-color;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .modal-detail {
+        height: 0vh;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 20;
+        background-color: $light-color;
+        border-radius: 1.5rem;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        color: $light-color;
+        visibility: hidden;
+        @include transition();
+
+        &.active {
+            height: 75vh;
+            visibility: visible;
+        }
+
+
+        .modal-header {
+            height: 70px;
+            background-color: $primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include padding-x();
+
+            .header-detail {
+                display: flex;
+                align-items: center;
+                svg {
+                    @include svg-width();
+                    margin-right: 1rem;
+                }
+            }
+            svg {
+                @include svg-width()
+            }
+        }
+        .modal-body {
+            @include padding-x();
+            .modal-content {
+                color: $dark-color;
+                span {
+                    opacity: 0.6;
+                }
+
+                h4 {
+                    font-size: 1.25rem;
+                }
+
+                .data-content {
+                    @include content-flex();
+                    @include border-bottom(1rem);
+
+                    .data-saldo {
+                        color: $primary-color
+                    }
+                }
+            }
+            .modal-action {
+                @include content-flex();
+                color: $dark-color;
+                margin-top: 1.5rem;
+
+                span {
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                }
+
+                .modal-btn {
+                    padding: 0.75rem 1.5rem;
+                    background-color: $primary-color;
+                    color: $light-color;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
