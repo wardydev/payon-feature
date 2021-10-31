@@ -8,6 +8,7 @@ function modalEffect() {
     // add active class
     const modalDetail = document.querySelector('.modal-detail')
     const closeModal = document.querySelector('.close-modal')
+    const bg = document.querySelector('.bg')
 
     const nominal = this.previousElementSibling.firstElementChild.innerHTML;
     const provider = this.previousElementSibling.firstElementChild.nextElementSibling.innerHTML;
@@ -17,10 +18,16 @@ function modalEffect() {
 
     changeValue(nominal, provider, harga)
     modalDetail.classList.add('active')
+    bg.classList.add('active')
     
     // close modal
     closeModal.addEventListener('click', function() {
         modalDetail.classList.remove('active')
+        bg.classList.remove('active')
+    })
+    bg.addEventListener('click', function() {
+        modalDetail.classList.remove('active')
+        bg.classList.remove('active')
     })
 
 }

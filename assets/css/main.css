@@ -14,7 +14,7 @@ main .breadcrumbs {
   background-color: #DE1D4C;
   height: 100px;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 2rem;
   position: fixed;
   left: 0;
   top: 0;
@@ -34,7 +34,7 @@ main .breadcrumbs .bread-topup span {
 }
 main .data-game {
   margin-top: 6rem;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
 }
 main .data-game .game-nominal {
   display: flex;
@@ -89,6 +89,14 @@ main .data-game .game-games .game-card .game-btn {
   color: #DE1D4C;
   font-weight: 500;
 }
+main .bg.active {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(27, 27, 27, 0.5);
+}
 main .modal-detail {
   height: 0vh;
   width: 100%;
@@ -105,7 +113,7 @@ main .modal-detail {
   transition: 0.5s;
 }
 main .modal-detail.active {
-  height: 60vh;
+  height: 65vh;
   visibility: visible;
 }
 main .modal-detail .modal-header {
@@ -114,7 +122,7 @@ main .modal-detail .modal-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
 }
 main .modal-detail .modal-header .header-detail {
   display: flex;
@@ -128,7 +136,7 @@ main .modal-detail .modal-header svg {
   width: 28px;
 }
 main .modal-detail .modal-body {
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
 }
 main .modal-detail .modal-body .modal-content {
   color: #1B1B1B;
