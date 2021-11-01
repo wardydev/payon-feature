@@ -148,7 +148,7 @@ main .modal-detail {
   transition: 0.5s;
 }
 main .modal-detail.active {
-  height: 90vh;
+  height: auto;
   visibility: visible;
 }
 main .modal-detail .modal-header {

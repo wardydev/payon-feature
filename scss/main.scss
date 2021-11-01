@@ -232,7 +232,7 @@ main {
         @include transition();
 
         &.active {
-            height: 90vh;
+            height: auto;
             visibility: visible;
         }
 
