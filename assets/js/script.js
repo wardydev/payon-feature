@@ -14,11 +14,10 @@ function modalEffect() {
     const provider = this.previousElementSibling.firstElementChild.nextElementSibling.innerHTML;
     const harga = this.previousElementSibling.lastElementChild.innerHTML;
     const idUser = document.querySelector('.input-id-user').value
-    const nomorHP = document.querySelector('.input-phone-number').value
 
     // console.log(provider)
 
-    changeValue(nominal, provider, harga, idUser, nomorHP)
+    changeValue(nominal, provider, harga, idUser)
     modalDetail.classList.add('active')
     bg.classList.add('active')
     
@@ -45,7 +44,6 @@ function changeValue(nominal, provider, harga, idUser, nomorHP) {
     const elProvider = document.querySelector('.provider')
     const elHarga = document.querySelectorAll('.harga')
     const elIdUser = document.querySelector('.id-user')
-    const elPhoneNumber = document.querySelector('.phone-number')
 
     elNominal.innerHTML = nominal
     elProvider.innerHTML = provider
@@ -53,5 +51,4 @@ function changeValue(nominal, provider, harga, idUser, nomorHP) {
         price.innerHTML = harga
     })
     elIdUser.innerHTML = idUser
-    elPhoneNumber.innerHTML = nomorHP
 }

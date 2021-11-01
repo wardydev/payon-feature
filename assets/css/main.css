@@ -51,10 +51,6 @@ main .form-input form .container .data-input label > input:focus ~ span::before,
   font-size: 14px;
   color: #DE1D4C;
 }
-main .form-input form .container .data-input label > select:focus ~ span::before, main .form-input form .container .data-input label > select:valid ~ span::before {
-  font-size: 14px;
-  color: #DE1D4C;
-}
 main .form-input form .container .data-input input {
   width: 100%;
   border: 0;
@@ -63,18 +59,6 @@ main .form-input form .container .data-input input {
   font-size: 16px;
 }
 main .form-input form .container .data-input input:focus, main .form-input form .container .data-input input:active {
-  outline: 0;
-  border: 0;
-}
-main .form-input form .container .data-input select {
-  width: 100%;
-  border: 0;
-  height: 56px;
-  padding: 20px 16px 6px;
-  font-size: 16px;
-  background-color: #f8f9fa;
-}
-main .form-input form .container .data-input select:focus, main .form-input form .container .data-input select:active {
   outline: 0;
   border: 0;
 }
@@ -87,19 +71,6 @@ main .form-input form .container .data-input .outlined > input:focus {
   border-color: transparent;
 }
 main .form-input form .container .data-input .outlined > input:focus ~ span::before, main .form-input form .container .data-input .outlined > input:valid ~ span::before {
-  transform: translateY(-28px);
-  background-color: #f8f9fa;
-  padding: 2px 4px;
-}
-main .form-input form .container .data-input .outlined > select {
-  border: 1px solid rgba(0, 0, 0, 0.42);
-  border-radius: 4px;
-}
-main .form-input form .container .data-input .outlined > select:focus {
-  box-shadow: 0 0 0 2px #DE1D4C;
-  border-color: transparent;
-}
-main .form-input form .container .data-input .outlined > select:focus ~ span::before, main .form-input form .container .data-input .outlined > select:valid ~ span::before {
   transform: translateY(-28px);
   background-color: #f8f9fa;
   padding: 2px 4px;
@@ -117,47 +88,8 @@ main .form-input form .container .data-input .outlined-1 > input:focus ~ span::b
   background-color: #f8f9fa;
   padding: 2px 4px;
 }
-main .form-input form .container .data-input .outlined-1 > select {
-  border: 1px solid rgba(0, 0, 0, 0.42);
-  border-radius: 4px;
-}
-main .form-input form .container .data-input .outlined-1 > select:focus {
-  box-shadow: 0 0 0 2px #DE1D4C;
-  border-color: transparent;
-}
-main .form-input form .container .data-input .outlined-1 > select:focus ~ span::before, main .form-input form .container .data-input .outlined-1 > select:valid ~ span::before {
-  transform: translateY(-28px);
-  background-color: #f8f9fa;
-  padding: 2px 4px;
-}
-main .form-input form .container .data-input .outlined-2 > input {
-  border: 1px solid rgba(0, 0, 0, 0.42);
-  border-radius: 4px;
-}
-main .form-input form .container .data-input .outlined-2 > input:focus {
-  box-shadow: 0 0 0 2px #DE1D4C;
-  border-color: transparent;
-}
-main .form-input form .container .data-input .outlined-2 > input:focus ~ span::before, main .form-input form .container .data-input .outlined-2 > input:valid ~ span::before {
-  transform: translateY(-28px);
-  background-color: #f8f9fa;
-  padding: 2px 4px;
-}
-main .form-input form .container .data-input .outlined-2 > select {
-  border: 1px solid rgba(0, 0, 0, 0.42);
-  border-radius: 4px;
-}
-main .form-input form .container .data-input .outlined-2 > select:focus {
-  box-shadow: 0 0 0 2px #DE1D4C;
-  border-color: transparent;
-}
-main .form-input form .container .data-input .outlined-2 > select:focus ~ span::before, main .form-input form .container .data-input .outlined-2 > select:valid ~ span::before {
-  transform: translateY(-28px);
-  background-color: #f8f9fa;
-  padding: 2px 4px;
-}
 main .data-game {
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 main .data-game .game-nominal {
   padding: 0.75rem 1rem;
