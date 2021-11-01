@@ -43,13 +43,15 @@ function modalEffect() {
 function changeValue(nominal, provider, harga, idUser, nomorHP) {
     const elNominal = document.querySelector('.nominal')
     const elProvider = document.querySelector('.provider')
-    const elHarga = document.querySelector('.harga')
+    const elHarga = document.querySelectorAll('.harga')
     const elIdUser = document.querySelector('.id-user')
     const elPhoneNumber = document.querySelector('.phone-number')
 
     elNominal.innerHTML = nominal
     elProvider.innerHTML = provider
-    elHarga.innerHTML = harga
+    elHarga.forEach(price => {
+        price.innerHTML = harga
+    })
     elIdUser.innerHTML = idUser
     elPhoneNumber.innerHTML = nomorHP
 }
