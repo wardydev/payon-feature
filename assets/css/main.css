@@ -181,6 +181,7 @@ main .modal-detail .modal-body .modal-content span {
 }
 main .modal-detail .modal-body .modal-content h4 {
   font-size: 1rem;
+  font-weight: 500;
 }
 main .modal-detail .modal-body .modal-content .data-content {
   display: flex;
