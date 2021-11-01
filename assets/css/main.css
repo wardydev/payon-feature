@@ -10,16 +10,109 @@ body {
   color: #1B1B1B;
 }
 
-main .data-game {
+main .form-input {
+  height: 12vh;
+  background-color: #DE1D4C;
   padding: 2rem 1rem;
 }
+main .form-input form {
+  min-height: 80px;
+  background-color: #f8f9fa;
+  box-shadow: 0.5px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  position: relative;
+}
+main .form-input form .container {
+  padding: 1rem;
+}
+main .form-input form .container .data-input {
+  margin-bottom: 1rem;
+}
+main .form-input form .container .data-input label {
+  position: relative;
+}
+main .form-input form .container .data-input label > span::after, main .form-input form .container .data-input label > span::before {
+  position: absolute;
+  transition: 200ms ease-in-out;
+}
+main .form-input form .container .data-input label > span::before {
+  content: attr(data-label);
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  pointer-events: none;
+  height: 1rem;
+  font-size: 1rem;
+  color: #1B1B1B;
+  line-height: 1;
+}
+main .form-input form .container .data-input label > input:focus ~ span::before, main .form-input form .container .data-input label > input:valid ~ span::before {
+  font-size: 14px;
+  color: #DE1D4C;
+}
+main .form-input form .container .data-input label > select:focus ~ span::before, main .form-input form .container .data-input label > select:valid ~ span::before {
+  font-size: 14px;
+  color: #DE1D4C;
+}
+main .form-input form .container .data-input input {
+  width: 100%;
+  border: 0;
+  height: 56px;
+  padding: 20px 16px 6px;
+  font-size: 16px;
+}
+main .form-input form .container .data-input input:focus, main .form-input form .container .data-input input:active {
+  outline: 0;
+  border: 0;
+}
+main .form-input form .container .data-input select {
+  width: 100%;
+  border: 0;
+  height: 56px;
+  padding: 20px 16px 6px;
+  font-size: 16px;
+}
+main .form-input form .container .data-input select:focus, main .form-input form .container .data-input select:active {
+  outline: 0;
+  border: 0;
+}
+main .form-input form .container .data-input .outlined > input {
+  border: 1px solid rgba(0, 0, 0, 0.42);
+  border-radius: 4px;
+}
+main .form-input form .container .data-input .outlined > input:focus {
+  box-shadow: 0 0 0 2px #DE1D4C;
+  border-color: transparent;
+}
+main .form-input form .container .data-input .outlined > input:focus ~ span::before, main .form-input form .container .data-input .outlined > input:valid ~ span::before {
+  transform: translateY(-28px);
+  background-color: white;
+  padding: 2px 4px;
+}
+main .form-input form .container .data-input .outlined > select {
+  border: 1px solid rgba(0, 0, 0, 0.42);
+  border-radius: 4px;
+}
+main .form-input form .container .data-input .outlined > select:focus {
+  box-shadow: 0 0 0 2px #DE1D4C;
+  border-color: transparent;
+}
+main .form-input form .container .data-input .outlined > select:focus ~ span::before, main .form-input form .container .data-input .outlined > select:valid ~ span::before {
+  transform: translateY(-28px);
+  background-color: white;
+  padding: 2px 4px;
+}
+main .data-game {
+  margin-top: 13rem;
+}
 main .data-game .game-nominal {
+  padding: 2rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 1.5rem;
   border-radius: 8px;
-  border-bottom: 2px solid rgba(27, 27, 27, 0.2);
+  border-bottom: 1px solid rgba(27, 27, 27, 0.2);
 }
 main .data-game .game-nominal span {
   font-size: 1rem;
@@ -33,9 +126,6 @@ main .data-game .game-nominal .nominal-icon svg {
 }
 main .data-game .game-nominal .nominal-icon .nominal-filter {
   margin-left: 1rem;
-}
-main .data-game .game-games {
-  margin-top: 1rem;
 }
 main .data-game .game-games .game-card {
   display: flex;
