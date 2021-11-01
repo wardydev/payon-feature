@@ -92,7 +92,7 @@ main .form-input form .container .data-input .outlined-1 > input:focus ~ span::b
   padding: 2px 4px;
 }
 main .data-game {
-  margin-top: 9rem;
+  margin-top: 6rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
