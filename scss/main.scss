@@ -54,7 +54,7 @@ main {
             background-color: $light-color;
             @include shadow();
             border-radius: 0.5rem;
-            position: relative;
+            margin-top: -33px;
 
             .container {
                 padding: 1rem;
