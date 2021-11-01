@@ -84,7 +84,8 @@ main .modal-detail {
   bottom: 0;
   z-index: 30;
   background-color: #f8f9fa;
-  border-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   overflow-x: hidden;
   color: #f8f9fa;
   visibility: hidden;
@@ -113,9 +114,6 @@ main .modal-detail .modal-header .header-detail svg {
 main .modal-detail .modal-header svg {
   width: 28px;
 }
-main .modal-detail .modal-body {
-  padding: 2rem 1rem;
-}
 main .modal-detail .modal-body .modal-content {
   color: #1B1B1B;
 }
@@ -130,9 +128,12 @@ main .modal-detail .modal-body .modal-content .data-content {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
-  padding-bottom: 1rem;
+  padding: 2rem 1rem;
+  padding-bottom: 0.15rem;
   border-radius: 8px;
   border-bottom: 2px solid rgba(27, 27, 27, 0.2);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 main .modal-detail .modal-body .modal-content .data-content .data-saldo {
   color: #DE1D4C;

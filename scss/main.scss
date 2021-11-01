@@ -129,7 +129,9 @@ main {
         bottom: 0;
         z-index: 30;
         background-color: $light-color;
-        border-radius: 1rem;
+        // border-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
         overflow-x: hidden;
         color: $light-color;
         visibility: hidden;
@@ -162,7 +164,7 @@ main {
             }
         }
         .modal-body {
-            @include padding-x();
+            // @include padding-x();
             .modal-content {
                 color: $dark-color;
                 span {
@@ -175,7 +177,10 @@ main {
 
                 .data-content {
                     @include content-flex();
-                    @include border-bottom(1rem);
+                    @include padding-x();
+                    @include border-bottom(0.15rem);
+                    padding-top: 1.25rem;
+                    padding-bottom: 1.25rem;
 
                     .data-saldo {
                         color: $primary-color
