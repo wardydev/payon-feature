@@ -54,8 +54,11 @@ main .form-input form .container .data-input label > input:focus ~ span::before,
 main .form-input form .container .data-input input {
   width: 100%;
   border: 0;
-  height: 56px;
-  padding: 16px 16px 6px;
+  height: 48px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 16px;
 }
 main .form-input form .container .data-input input:focus, main .form-input form .container .data-input input:active {
