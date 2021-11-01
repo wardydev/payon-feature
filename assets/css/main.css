@@ -89,28 +89,9 @@ main .form-input form .container .data-input .outlined-1 > input:focus ~ span::b
   padding: 2px 4px;
 }
 main .data-game {
-  margin-top: 10rem;
-}
-main .data-game .game-nominal {
-  padding: 0.75rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 8px;
-  border-bottom: 1px solid rgba(27, 27, 27, 0.2);
-}
-main .data-game .game-nominal span {
-  font-size: 1rem;
-  font-weight: 500;
-}
-main .data-game .game-nominal .nominal-icon {
-  display: flex;
-}
-main .data-game .game-nominal .nominal-icon svg {
-  width: 28px;
-}
-main .data-game .game-nominal .nominal-icon .nominal-filter {
-  margin-left: 1rem;
+  margin-top: 9rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 main .data-game .game-games .game-card {
   display: flex;
@@ -167,7 +148,7 @@ main .modal-detail {
   transition: 0.5s;
 }
 main .modal-detail.active {
-  height: 65vh;
+  height: 80vh;
   visibility: visible;
 }
 main .modal-detail .modal-header {
@@ -209,9 +190,6 @@ main .modal-detail .modal-body .modal-content .data-content {
   border-bottom: 1px solid rgba(27, 27, 27, 0.2);
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-main .modal-detail .modal-body .modal-content .data-content .data-saldo {
-  color: #DE1D4C;
 }
 main .modal-detail .modal-body .modal-action {
   display: flex;
