@@ -18,7 +18,7 @@ $light-color: #f8f9fa;
 @mixin border-bottom($padding) {
     padding-bottom: $padding;
     border-radius: 8px;
-    border-bottom: 2px solid rgba($dark-color, $alpha: 0.2);
+    border-bottom: 1px solid rgba($dark-color, $alpha: 0.2);
 }
 
 @mixin transition {
@@ -100,7 +100,7 @@ main {
                 }
                 .game-btn {
                     padding: 0.5rem 2rem;
-                    border: 2px solid $primary-color;
+                    border: 1px solid $primary-color;
                     color: $primary-color;
                     font-weight: 500;
                     border-radius: 0.5rem;
@@ -189,9 +189,8 @@ main {
             }
             .modal-action {
                 @include content-flex();
+                @include padding-x();
                 color: $dark-color;
-                margin-top: 1.5rem;
-
                 span {
                     font-size: 1rem;
                     font-weight: 700;

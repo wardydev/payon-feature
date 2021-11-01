@@ -62,7 +62,7 @@ main .data-game .game-games .game-card .game-title b {
 }
 main .data-game .game-games .game-card .game-btn {
   padding: 0.5rem 2rem;
-  border: 2px solid #DE1D4C;
+  border: 1px solid #DE1D4C;
   color: #DE1D4C;
   font-weight: 500;
   border-radius: 0.5rem;
@@ -131,7 +131,7 @@ main .modal-detail .modal-body .modal-content .data-content {
   padding: 2rem 1rem;
   padding-bottom: 0.15rem;
   border-radius: 8px;
-  border-bottom: 2px solid rgba(27, 27, 27, 0.2);
+  border-bottom: 1px solid rgba(27, 27, 27, 0.2);
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
@@ -143,8 +143,8 @@ main .modal-detail .modal-body .modal-action {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
+  padding: 2rem 1rem;
   color: #1B1B1B;
-  margin-top: 1.5rem;
 }
 main .modal-detail .modal-body .modal-action span {
   font-size: 1rem;
