@@ -3,7 +3,7 @@ $dark-color: #1B1B1B;
 $light-color: #f8f9fa;
 
 @mixin padding-x {
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
 }
 @mixin svg-width {
     width: 28px;
@@ -39,34 +39,8 @@ body {
 
 // container
 main {
-    .breadcrumbs {
-        background-color: $primary-color;
-        height: 100px;
-        width: 100%;
-        padding: 1rem 2rem;
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 30;
-
-        .bread-topup {
-            display: flex;
-            align-items: center;
-            color: $light-color;
-
-            svg {
-                @include svg-width();
-            }
-
-            span {
-                margin-left: 1rem;
-                font-size: 1.5rem;
-            }
-        }
-    }
-
     .data-game {
-        margin-top: 6rem;
+        // margin-top: 6rem;
         @include padding-x();
         
         .game-nominal {
@@ -78,7 +52,7 @@ main {
             border-bottom: 2px solid rgba($dark-color, $alpha: 0.2);
 
             span {
-                font-size: 1.25rem;
+                font-size: 1rem;
                 font-weight: 500;
             }
 
@@ -102,24 +76,25 @@ main {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding-bottom: 1.5rem;
-                padding-top: 1.5rem;
-                border-radius: 8px;
-                border-bottom: 2px solid rgba($dark-color, $alpha: 0.2);
+                // background-color: red;
+                padding: 1.75rem 1rem;
+                margin-bottom: 1rem;
+                border-radius: 0.5rem;
+                box-shadow: 0.5px 1px 2px rgba($color: #000000, $alpha: 0.2);
 
                 .game-title {
                     h4 {
-                        font-size: 1.25rem;
+                        font-size: 1rem;
                         font-weight: 700;
                         margin-bottom: 3px;
                     }
                     p {
-                        font-size: 1.25rem;
+                        font-size: 1rem;
                         opacity: 0.6;
                         margin-bottom: 10px;
                     }
                     b {
-                        font-size: 1.25rem;
+                        font-size: 1rem;
                         font-weight: 700;
                     }
                 }
@@ -128,6 +103,7 @@ main {
                     border: 2px solid $primary-color;
                     color: $primary-color;
                     font-weight: 500;
+                    border-radius: 0.5rem;
                 }
             }
         }
@@ -141,7 +117,7 @@ main {
             top: 0;
             left: 0;
             background-color: rgba($dark-color, $alpha: 0.5);
-            // z-index: 40;
+            z-index: 20;
         }
     }
 
@@ -151,11 +127,10 @@ main {
         position: fixed;
         left: 0;
         bottom: 0;
-        z-index: 20;
+        z-index: 30;
         background-color: $light-color;
-        border-radius: 1.5rem;
+        border-radius: 1rem;
         overflow-x: hidden;
-        overflow-y: scroll;
         color: $light-color;
         visibility: hidden;
         @include transition();
@@ -195,7 +170,7 @@ main {
                 }
 
                 h4 {
-                    font-size: 1.25rem;
+                    font-size: 1rem;
                 }
 
                 .data-content {
@@ -213,7 +188,7 @@ main {
                 margin-top: 1.5rem;
 
                 span {
-                    font-size: 1.25rem;
+                    font-size: 1rem;
                     font-weight: 700;
                 }
 

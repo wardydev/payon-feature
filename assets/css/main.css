@@ -10,31 +10,8 @@ body {
   color: #1B1B1B;
 }
 
-main .breadcrumbs {
-  background-color: #DE1D4C;
-  height: 100px;
-  width: 100%;
-  padding: 1rem 2rem;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 30;
-}
-main .breadcrumbs .bread-topup {
-  display: flex;
-  align-items: center;
-  color: #f8f9fa;
-}
-main .breadcrumbs .bread-topup svg {
-  width: 28px;
-}
-main .breadcrumbs .bread-topup span {
-  margin-left: 1rem;
-  font-size: 1.5rem;
-}
 main .data-game {
-  margin-top: 6rem;
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
 }
 main .data-game .game-nominal {
   display: flex;
@@ -45,7 +22,7 @@ main .data-game .game-nominal {
   border-bottom: 2px solid rgba(27, 27, 27, 0.2);
 }
 main .data-game .game-nominal span {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 main .data-game .game-nominal .nominal-icon {
@@ -64,23 +41,23 @@ main .data-game .game-games .game-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
-  border-radius: 8px;
-  border-bottom: 2px solid rgba(27, 27, 27, 0.2);
+  padding: 1.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.5px 1px 2px rgba(0, 0, 0, 0.2);
 }
 main .data-game .game-games .game-card .game-title h4 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 3px;
 }
 main .data-game .game-games .game-card .game-title p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   opacity: 0.6;
   margin-bottom: 10px;
 }
 main .data-game .game-games .game-card .game-title b {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 main .data-game .game-games .game-card .game-btn {
@@ -88,6 +65,7 @@ main .data-game .game-games .game-card .game-btn {
   border: 2px solid #DE1D4C;
   color: #DE1D4C;
   font-weight: 500;
+  border-radius: 0.5rem;
 }
 main .bg.active {
   height: 100vh;
@@ -96,6 +74,7 @@ main .bg.active {
   top: 0;
   left: 0;
   background-color: rgba(27, 27, 27, 0.5);
+  z-index: 20;
 }
 main .modal-detail {
   height: 0vh;
@@ -103,11 +82,10 @@ main .modal-detail {
   position: fixed;
   left: 0;
   bottom: 0;
-  z-index: 20;
+  z-index: 30;
   background-color: #f8f9fa;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   overflow-x: hidden;
-  overflow-y: scroll;
   color: #f8f9fa;
   visibility: hidden;
   transition: 0.5s;
@@ -122,7 +100,7 @@ main .modal-detail .modal-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
 }
 main .modal-detail .modal-header .header-detail {
   display: flex;
@@ -136,7 +114,7 @@ main .modal-detail .modal-header svg {
   width: 28px;
 }
 main .modal-detail .modal-body {
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
 }
 main .modal-detail .modal-body .modal-content {
   color: #1B1B1B;
@@ -145,7 +123,7 @@ main .modal-detail .modal-body .modal-content span {
   opacity: 0.6;
 }
 main .modal-detail .modal-body .modal-content h4 {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 main .modal-detail .modal-body .modal-content .data-content {
   display: flex;
@@ -168,7 +146,7 @@ main .modal-detail .modal-body .modal-action {
   margin-top: 1.5rem;
 }
 main .modal-detail .modal-body .modal-action span {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 main .modal-detail .modal-body .modal-action .modal-btn {
