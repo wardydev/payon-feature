@@ -1,5 +1,5 @@
 $primary-color: #DE1D4C;
-$dark-color: #1B1B1B;
+$dark-color: #4b4b4b;
 $light-color: #f8f9fa;
 
 @mixin padding-x {
@@ -22,7 +22,7 @@ $light-color: #f8f9fa;
 }
 
 @mixin transition {
-    transition: 0.5s;
+    transition: 1s;
 }
 
 @mixin shadow {
