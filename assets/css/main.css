@@ -55,7 +55,7 @@ main .form-input form .container .data-input input {
   width: 100%;
   border: 0;
   height: 56px;
-  padding: 20px 16px 6px;
+  padding: 16px 16px 6px;
   font-size: 16px;
 }
 main .form-input form .container .data-input input:focus, main .form-input form .container .data-input input:active {
