@@ -20,18 +20,26 @@ function modalEffect() {
     changeValue(nominal, provider, harga, idUser)
     modalDetail.classList.add('active')
     bg.classList.add('active')
+
+    // loading
+    const modalBtn = document.querySelector('.modal-btn')
+    modalBtn.addEventListener('click', function() {
+        this.innerHTML = 'loading...'
+    })
     
     // close modal
     closeModal.addEventListener('click', function() {
         modalDetail.classList.remove('active')
         bg.classList.remove('active')
-
+        modalBtn.innerHTML = 'Beli Sekarang'
+        
         document.querySelector('.input-id-user').value = ''
         document.querySelector('.input-phone-number').value = ''
     })
     bg.addEventListener('click', function() {
         modalDetail.classList.remove('active')
         bg.classList.remove('active')
+        modalBtn.innerHTML = 'Beli Sekarang'
 
         document.querySelector('.input-id-user').value = ''
         document.querySelector('.input-phone-number').value = ''
